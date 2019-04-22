@@ -11,7 +11,9 @@ One should construct the Iris_db and Iris_test user, grant the user permission f
 CREATE DATABASE Iris_db;
 
 CREATE USER 'Iris_test'@'localhost' IDENTIFIED BY 'Iris_12345678';
+
 GRANT ALL ON Iris_db.* TO 'Iris_test'@'localhost';
+
 FLUSH PRIVILEGES;
 
 ...
